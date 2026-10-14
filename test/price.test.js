@@ -11,8 +11,8 @@ test('totalPrice adds up the prices', () => {
 // Test 2: a 10% discount on 200 should give 180.
 // Remove the // at the start of each line below, then push.
 //
-// const { applyDiscount } = require('../src/price');
-//
-// test('applyDiscount takes a percent off', () => {
-//   assert.strictEqual(applyDiscount(200, 10), 180);
-// });
+const { applyDiscount } = require('../src/price');
+
+test('applyDiscount takes a percent off', () => {
+  assert.strictEqual(applyDiscount(200, 10), 180);
+});
